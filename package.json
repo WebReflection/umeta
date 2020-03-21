@@ -1,0 +1,23 @@
+{
+  "name": "umeta",
+  "version": "0.0.0",
+  "description": "A micro helper for `import.meta` data",
+  "main": "./cjs/index.js",
+  "scripts": {
+    "build": "npm run cjs && npm run test",
+    "cjs": "ascjs --no-default esm cjs",
+    "test": "node test/index.js"
+  },
+  "keywords": ["import", "meta", "__filename", "__dirname", "fileName", "dirName"],
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "devDependencies": {
+    "ascjs": "^3.1.2"
+  },
+  "module": "./esm/index.js",
+  "type": "module",
+  "exports": {
+    "import": "./esm/index.js",
+    "default": "./cjs/index.js"
+  }
+}
