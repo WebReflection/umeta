@@ -8,7 +8,14 @@
     "cjs": "ascjs --no-default esm cjs",
     "test": "node test/index.js"
   },
-  "keywords": ["import", "meta", "__filename", "__dirname", "fileName", "dirName"],
+  "keywords": [
+    "import",
+    "meta",
+    "__filename",
+    "__dirname",
+    "fileName",
+    "dirName"
+  ],
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
@@ -19,5 +26,13 @@
   "exports": {
     "import": "./esm/index.js",
     "default": "./cjs/index.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/umeta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/umeta/issues"
+  },
+  "homepage": "https://github.com/WebReflection/umeta#readme"
 }
