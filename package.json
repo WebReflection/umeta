@@ -1,6 +1,6 @@
 {
   "name": "umeta",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A micro helper for `import.meta` data",
   "main": "./cjs/index.js",
   "scripts": {
