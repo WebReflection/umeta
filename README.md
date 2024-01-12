@@ -4,6 +4,16 @@
 
 A _micro_ helper for `import.meta` data.
 
+# Announcement
+
+This module is currently redundant thanks to `import.meta.dirname` and `import.meta.filename` landed in NodeJS LTS.
+
+In Bun those would be the equivalent of `import.meta.dir` and `import.meta.dir + '/' + import.meta.file`.
+
+I think it'd be rather better to normalize Bun than keep parsing `import.meta.url` but basically all I am saying is that this module is dead for good.
+
+- - -
+
 ```js
 import umeta from 'umeta';
 
