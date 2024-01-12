@@ -12,6 +12,18 @@ In Bun those would be the equivalent of `import.meta.dir` and `import.meta.dir +
 
 I think it'd be rather better to normalize Bun than keep parsing `import.meta.url` but basically all I am saying is that this module is dead for good.
 
+### normalization for both NodeJS and Bun
+
+```js
+const {
+  dirname = import.meta.dir,
+  filename = `${import.meta.dir}/${import.meta.file}`,
+} = import.meta;
+
+console.log(dirname);
+console.log(filename);
+```
+
 - - -
 
 ```js
